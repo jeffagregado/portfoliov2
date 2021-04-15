@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 To clone:
 
 ```bash
-git https://github.com/jeffagregado/nextjs-boilerplate <Project-Name>
+git clone https://github.com/jeffagregado/nextjs-boilerplate <Project-Name>
 
 npm install
 # or

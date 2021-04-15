@@ -13,3 +13,13 @@ npm install
 # or
 yarn install
 ```
+
+## Features
+
+* NextJS
+* Jest
+* React Testing Libraries
+* Typescript
+* Sass
+* Tailwind
+* React-scroll

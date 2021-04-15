@@ -1,13 +1,11 @@
-This is my personal NextJS boilerplate for my future projects.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my 2nd personal portfolio using [Next.js](https://nextjs.org/)
 
 ## Getting Started
 
 To clone:
 
 ```bash
-git clone https://github.com/jeffagregado/nextjs-boilerplate <Project-Name>
+git clone https://github.com/jeffagregado/portfoliov2 <Project-Name>
 
 npm install
 # or

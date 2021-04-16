@@ -1,0 +1,39 @@
+@import './Utilities/variables';
+@import './Utilities/mixins';
+
+.navMain {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: $primary;
+    @include font(2rem, 600);
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 1rem;
+      cursor: pointer;
+      @include font(1.3rem);
+      transition: 0.5s ease;
+      color: black;
+
+      &:hover {
+        color: $primary;
+      }
+
+      @screen md {
+        margin: 0 1.5rem;
+      }
+
+      .nav--active {
+        color: $primary;
+      }
+    }
+  }
+}

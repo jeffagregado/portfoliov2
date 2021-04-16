@@ -24,7 +24,7 @@ export const Nav = () => {
   ]
 
   return (
-    <Container>
+    <Container id="home">
       <nav className={navStyle.navMain}>
         <Link href="/">
           <a className={navStyle.logo}>Logo</a>

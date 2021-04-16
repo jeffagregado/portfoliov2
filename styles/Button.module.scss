@@ -1,0 +1,19 @@
+@import './Utilities/mixins';
+
+.btn {
+  @include button(10px);
+}
+
+#btn-top {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  z-index: 100;
+  left: 95%;
+  bottom: 12px;
+  @include font(16px);
+}

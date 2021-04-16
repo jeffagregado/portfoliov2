@@ -1,6 +1,10 @@
 import { ReactNode } from 'react'
 import { Props } from '../interfaces/index'
 
-export const Container = ({ children, className }: Props) => {
-  return <div className={`container ${className}`}>{children}</div>
+export const Container = ({ children, className, id }: Props) => {
+  return (
+    <div id={id} className={`container ${className}`}>
+      {children}
+    </div>
+  )
 }

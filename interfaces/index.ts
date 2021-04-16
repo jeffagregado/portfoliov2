@@ -1,6 +1,7 @@
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 
 export interface Props {
-    children?: ReactNode
-    className?: string
+  children?: ReactNode
+  className?: any
+  id?: string
 }

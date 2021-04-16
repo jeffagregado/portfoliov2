@@ -4,7 +4,7 @@
   @include button(10px);
 }
 
-#btn-top {
+.btn-top {
   border-radius: 50%;
   background-color: black;
   color: white;
@@ -13,7 +13,11 @@
   width: 48px;
   height: 48px;
   z-index: 100;
-  left: 95%;
-  bottom: 12px;
+  left: 85%;
+  bottom: 15px;
   @include font(16px);
+
+  @screen md {
+    left: 90%;
+  }
 }

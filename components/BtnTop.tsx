@@ -7,7 +7,7 @@ export const BtnTop = () => {
   const { y: pageYOffset } = useWindowScroll()
 
   useEffect(() => {
-    if (pageYOffset > 400) {
+    if (pageYOffset > 300) {
       setVisible(true)
     } else {
       setVisible(false)
@@ -21,7 +21,11 @@ export const BtnTop = () => {
       {!visible ? (
         false
       ) : (
-        <button id={buttonStyle['btn-top']} title="Top" onClick={scrollToTop}>
+        <button
+          className={buttonStyle['btn-top']}
+          title="Top"
+          onClick={scrollToTop}
+        >
           Top
         </button>
       )}

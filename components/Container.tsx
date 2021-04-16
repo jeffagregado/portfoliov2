@@ -1,5 +1,6 @@
+import { ReactNode } from 'react';
 interface Props {
-  children: any
+  children: ReactNode
 }
 
 export const Container = ({ children }: Props) => {

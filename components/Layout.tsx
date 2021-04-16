@@ -1,9 +1,6 @@
 import { ReactNode } from 'react'
+import { Props } from '../interfaces/index'
 import Meta from './Meta'
-
-type Props = {
-  children?: ReactNode
-}
 
 const Layout = ({ children }: Props) => {
   return (

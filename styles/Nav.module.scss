@@ -1,39 +1,109 @@
 @import './Utilities/mixins';
 
+.navContainer {
+  padding: 0 1rem !important;
+
+  @screen md {
+    padding: 0 5rem;
+  }
+}
+
 .navMain {
   margin: 2rem 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   overflow: hidden;
+
+  @screen md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .logo {
     color: $primary;
     @include font(2rem, 600);
   }
 
-  ul {
+  .nav-list {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 
     li {
-      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0;
       cursor: pointer;
       @include font(1.3rem);
       transition: 0.5s ease;
       color: black;
+      width: 100%;
 
       &:hover {
         color: $primary;
       }
 
-      @screen md {
-        margin: 0 1.5rem;
-      }
-
       .nav--active {
         color: $primary;
       }
+
+      &:last-child {
+        box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 1px 0 0 #e6ecf8;
+      }
+    }
+
+    &.collapse {
+      max-height: 0;
+
+      @screen md {
+        max-height: 280px;
+      }
+    }
+
+    &.collapse-active {
+      max-height: 280px;
+    }
+
+    @screen md {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        margin-left: 1.5rem;
+        &:last-child {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  /* nav button */
+  .nav-toggle {
+    padding: 9px 10px;
+    margin: 8px 15px;
+    border: 1px solid transparent;
+
+    .nav-icon {
+      background-color: black;
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      margin: 5px 0;
+    }
+
+    @screen sm {
+      display: none;
     }
   }
 }

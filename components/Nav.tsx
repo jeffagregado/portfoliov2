@@ -2,6 +2,8 @@ import { Container } from './Container'
 import Link from 'next/link'
 import { Link as LinkScroll } from 'react-scroll'
 import navStyle from '../styles/Nav.module.scss'
+import NavBurger from './NavBurger'
+import { useState } from 'react'
 
 interface navItem {
   id: string
@@ -23,15 +25,23 @@ export const Nav = () => {
     },
   ]
 
+  const [isNavCollapsed, setNavCollapsed] = useState(false)
+  const handleNavCollapsed = () => setNavCollapsed(!isNavCollapsed)
+
   return (
-    <Container id="home">
+    <Container id="home" className={navStyle.navContainer}>
       <nav className={navStyle.navMain}>
-        <div className={navStyle.logo}>
+        <div>
           <Link href="/">
-            <a>Logo</a>
+            <a className={navStyle.logo}>Logo</a>
           </Link>
+          <NavBurger onClick={handleNavCollapsed} />
         </div>
-        <ul>
+        <ul
+          className={`${navStyle['nav-list']} ${
+            isNavCollapsed ? navStyle['collapse-active'] : navStyle.collapse
+          }`}
+        >
           {navItems.map((navItem) => (
             <li key={navItem.id}>
               <Link href={navItem.link}>

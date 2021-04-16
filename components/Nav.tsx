@@ -1,9 +1,9 @@
-import { Container } from "next/app"
+import { Container } from 'next/app'
 
 export const Nav = () => {
-    return ( 
-        <nav>
-            <Container></Container>
-        </nav>
-     );
+  return (
+    <Container>
+      <nav></nav>
+    </Container>
+  )
 }

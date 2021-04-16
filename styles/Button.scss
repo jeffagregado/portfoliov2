@@ -1,0 +1,5 @@
+@use './Utilities/mixins';
+
+.btn {
+  @include button(10px);
+}

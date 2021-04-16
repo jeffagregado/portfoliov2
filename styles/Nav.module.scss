@@ -1,12 +1,12 @@
-@import './Utilities/variables';
 @import './Utilities/mixins';
 
 .navMain {
   margin: 2rem 0;
-  width: 100%;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 
   .logo {
     color: $primary;

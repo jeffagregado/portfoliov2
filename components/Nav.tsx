@@ -26,9 +26,11 @@ export const Nav = () => {
   return (
     <Container id="home">
       <nav className={navStyle.navMain}>
-        <Link href="/">
-          <a className={navStyle.logo}>Logo</a>
-        </Link>
+        <div className={navStyle.logo}>
+          <Link href="/">
+            <a>Logo</a>
+          </Link>
+        </div>
         <ul>
           {navItems.map((navItem) => (
             <li key={navItem.id}>

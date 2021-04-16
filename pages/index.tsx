@@ -12,8 +12,8 @@ export default function Home() {
       </Container>
 
       <div className={sectionStyle.sectIntro}>
-        <Container>
-          <div className={sectionStyle['sectIntro-intro']}>
+        <Container className={sectionStyle['sectIntro-intro']}>
+          <div>
             <h1>Jeffrey Andrew Agregado</h1>
             <p>
               Since beginning my journey as a freelance designer nearly 10 years

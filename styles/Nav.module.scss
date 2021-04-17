@@ -17,8 +17,8 @@
   }
 
   .logo {
+      @include font(2rem, 600);
     color: $primary;
-    @include font(2rem, 600);
   }
 
   .nav-list {
@@ -30,12 +30,12 @@
     transition: max-height 0.3s ease;
 
     li {
+      @include font(1.3rem);
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 1rem 0;
       cursor: pointer;
-      @include font(1.3rem);
       transition: 0.5s ease;
       color: black;
       width: 100%;

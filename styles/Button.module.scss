@@ -5,6 +5,7 @@
 }
 
 .btn-top {
+  @include font(16px);
   border-radius: 50%;
   background-color: black;
   color: white;
@@ -15,7 +16,6 @@
   z-index: 100;
   left: 78%;
   bottom: 15px;
-  @include font(16px);
 
   @screen md {
     left: 90%;

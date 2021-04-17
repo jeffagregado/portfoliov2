@@ -9,11 +9,12 @@
 
   .sectHome-hero {
     text-align: center;
-    h1 {
+
+    & > h1 {
       @include font(4rem, 600);
     }
 
-    p {
+    & > p {
       @include font(1.5rem);
     }
   }
@@ -40,14 +41,14 @@
       padding: 0 25rem;
     }
 
-    h1 {
+    & > div > h1 {
       @include font(1.5rem, 600);
 
       @screen md {
         @include font(2rem, 600);
       }
     }
-    p {
+    & > div > p {
       @include font(1.3rem, 200);
       margin-top: 1.5rem;
     }

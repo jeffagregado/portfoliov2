@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '5rem',
+      padding: '1rem',
     },
     /*     colors: {
       primary: '#383E4C',

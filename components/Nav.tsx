@@ -29,7 +29,7 @@ export const Nav = () => {
   const handleNavCollapsed = () => setNavCollapsed(!isNavCollapsed)
 
   return (
-    <Container id="home" className={navStyle.navContainer}>
+    <Container id="home">
       <nav className={navStyle.navMain}>
         <div>
           <Link href="/">

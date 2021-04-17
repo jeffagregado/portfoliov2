@@ -1,16 +1,7 @@
 @import './Utilities/mixins';
 
-.navContainer {
-  padding: 0 1rem !important;
-
-  @screen md {
-    padding: 0 5rem;
-  }
-}
-
 .navMain {
   margin: 2rem 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;

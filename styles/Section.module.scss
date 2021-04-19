@@ -20,16 +20,24 @@
 
       & > p {
         @include font($fontSub);
+        margin-bottom: 2em;
       }
     }
   }
 
   &.sectIntro {
-    min-height: 60vh;
+    min-height: 50vh;
     background-color: $primary;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 15em;
 
-    @screen md {
-      min-height: 50vh;
+    @media (min-width: 360px) {
+      padding-bottom: 10em;
+    }
+
+    @screen xl {
+      min-height: 60vh;
     }
 
     .sectIntro-intro {
@@ -61,7 +69,12 @@
   }
 
   &.sectSkills {
-    margin-top: -5em;
+    margin-top: -10em;
+    margin-bottom: 5em;
+
+    @screen sm {
+      margin-top: -10em;
+    }
 
     .skills {
       display: flex;

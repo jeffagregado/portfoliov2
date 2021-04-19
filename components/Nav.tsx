@@ -23,11 +23,6 @@ export const Nav = () => {
       name: 'Projects',
       link: '#',
     },
-    {
-      id: 'resume',
-      name: 'My Resume',
-      link: '#',
-    },
   ]
 
   const [isNavCollapsed, setNavCollapsed] = useState(false)

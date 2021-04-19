@@ -1,9 +1,9 @@
 @mixin button($radius) {
   border-radius: $radius;
-  border-color: $primary;
+  border: 1px solid $primary;
   color: $primary;
-  padding: 1rem 2rem;
-  transition: 0.5s ease-in-out;
+  padding: 1em 2em;
+  transition: 0.5s ease;
 
   &:hover {
     background-color: $primary;

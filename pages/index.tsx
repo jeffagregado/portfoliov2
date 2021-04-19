@@ -1,6 +1,7 @@
 import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import sectionStyle from '../styles/Section.module.scss'
+import Button from '../components/Button'
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
         <section className={sectionStyle['sectHome-hero']}>
           <h1>Front-End Web Developer</h1>
           <p>Creating clean and simple website. Coding with passion</p>
+          <Button href="https://1drv.ms/b/s!AsjTvQE1H1sciZRqfTWUy5U3JnTsng?e=l3fMNh">
+            My Resume
+          </Button>
         </section>
       </Container>
 

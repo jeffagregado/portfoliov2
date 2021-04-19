@@ -1,56 +1,81 @@
 @import './Utilities/mixins';
 
-.sectHome {
+.section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  margin-bottom: 1em;
 
-  .sectHome-hero {
-    text-align: center;
+  &.sectHome {
+    flex-direction: column;
+    height: 85vh;
+    margin-bottom: 0;
 
-    & > h1 {
-      @include font(4rem, 600);
-    }
+    .sectHome-hero {
+      text-align: center;
 
-    & > p {
-      @include font(1.5rem);
-    }
-  }
-}
+      & > h1 {
+        @include font(4rem, 600);
+      }
 
-.sectIntro {
-  min-height: 35vh;
-  background-color: $primary;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .sectIntro-intro {
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    display: block;
-
-    @screen lg {
-      padding: 0 10rem;
-    }
-
-    @screen xl {
-      padding: 0 25rem;
-    }
-
-    & > div > h1 {
-      @include font(1.5rem, 600);
-
-      @screen md {
-        @include font(2rem, 600);
+      & > p {
+        @include font($fontSub);
       }
     }
-    & > div > p {
-      @include font(1.3rem, 200);
-      margin-top: 1.5rem;
+  }
+
+  &.sectIntro {
+    min-height: 60vh;
+    background-color: $primary;
+
+    @screen md {
+      min-height: 50vh;
+    }
+
+    .sectIntro-intro {
+      text-align: center;
+      color: white;
+      padding: 1rem;
+      display: block;
+
+      @screen lg {
+        padding: 0 10rem;
+      }
+
+      @screen xl {
+        padding: 0 25rem;
+      }
+
+      & > div > h1 {
+        @include font(1.5rem, 600);
+
+        @screen md {
+          @include font(2rem, 600);
+        }
+      }
+      & > div > p {
+        @include font(1.3rem, 200);
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  &.sectSkills {
+    margin-top: -5em;
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      & > * {
+        flex: 1 1 100%;
+
+        @screen md {
+          flex: 0 0 25em;
+        }
+      }
     }
   }
 }

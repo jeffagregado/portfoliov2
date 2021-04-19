@@ -1,17 +1,18 @@
+import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import sectionStyle from '../styles/Section.module.scss'
 
 export default function Home() {
   return (
     <>
-      <Container className={sectionStyle.sectHome}>
-        <div className={sectionStyle['sectHome-hero']}>
+      <Container className={`${sectionStyle.section} ${sectionStyle.sectHome}`}>
+        <section className={sectionStyle['sectHome-hero']}>
           <h1>Front-End Web Developer</h1>
           <p>Creating clean and simple website. Coding with passion</p>
-        </div>
+        </section>
       </Container>
 
-      <div className={sectionStyle.sectIntro}>
+      <section className={`${sectionStyle.section} ${sectionStyle.sectIntro}`}>
         <Container className={sectionStyle['sectIntro-intro']}>
           <div>
             <h1>Jeffrey Andrew Agregado</h1>
@@ -25,7 +26,62 @@ export default function Home() {
             </p>
           </div>
         </Container>
-      </div>
+      </section>
+
+      <section
+        id="skills"
+        className={`${sectionStyle.section} ${sectionStyle.sectSkills}`}
+      >
+        <Container>
+          <div className={`${sectionStyle.skills}`}>
+            <Card>
+              <div>
+                <h1>Techincal Languages</h1>
+                <ul>
+                  <li>HTML/5</li>
+                  <li>CSS</li>
+                  <li>Sass</li>
+                  <li>Javascript / ES6</li>
+                  <li>ReactJs</li>
+                </ul>
+              </div>
+            </Card>
+            <Card>
+              <div>
+                <h1>Dev Tools / Frameworks</h1>
+                <ul>
+                  <li>Github</li>
+                  <li>Next.Js</li>
+                  <li>Netlify</li>
+                  <li>VS Code</li>
+                  <li>Firebase</li>
+                  <li>Contentful</li>
+                </ul>
+              </div>
+            </Card>
+            <Card>
+              <div>
+                <h1>Design Tools</h1>
+                <ul>
+                  <li>Photoshop</li>
+                  <li>Bootstrap</li>
+                  <li>Tailwind</li>
+                  <li>Material UI</li>
+                </ul>
+              </div>
+            </Card>
+          </div>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <div>
+            <h1>My Recent Work</h1>
+            <sub>Below are my few projects I've been working recently</sub>
+          </div>
+        </Container>
+      </section>
     </>
   )
 }

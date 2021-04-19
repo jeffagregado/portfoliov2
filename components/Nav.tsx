@@ -19,8 +19,13 @@ export const Nav = () => {
       link: '#',
     },
     {
-      id: 'portfolio',
-      name: 'Portfolio',
+      id: 'projects',
+      name: 'Projects',
+      link: '#',
+    },
+    {
+      id: 'resume',
+      name: 'My Resume',
       link: '#',
     },
   ]
@@ -31,9 +36,9 @@ export const Nav = () => {
   return (
     <Container id="home">
       <nav className={navStyle.navMain}>
-        <div>
+        <div className={navStyle.logo}>
           <Link href="/">
-            <a className={navStyle.logo}>Logo</a>
+            <a>Logo</a>
           </Link>
           <NavBurger onClick={handleNavCollapsed} />
         </div>

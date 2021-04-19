@@ -11,14 +11,13 @@
     justify-content: space-between;
   }
 
-  & > div {
+  & > .logo {
+    @include font(2rem, 600);
     display: flex;
     justify-content: space-between;
-  }
-
-  .logo {
-      @include font(2rem, 600);
+    align-items: center;
     color: $primary;
+    flex-grow: 1;
   }
 
   .nav-list {
@@ -68,9 +67,9 @@
     @screen md {
       display: flex;
       flex-direction: row;
+      flex-grow: 1;
 
       li {
-        margin-left: 1.5rem;
         &:last-child {
           box-shadow: none;
         }

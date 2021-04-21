@@ -30,35 +30,37 @@ export const Nav = () => {
 
   return (
     <Container id="home">
-      <nav className={navStyle.navMain}>
+      <header className={navStyle.navMain}>
         <div className={navStyle.logo}>
           <Link href="/">
             <a>Logo</a>
           </Link>
-          <NavBurger onClick={handleNavCollapsed} />
         </div>
-        <ul
-          className={`${navStyle['nav-list']} ${
-            isNavCollapsed ? navStyle['collapse-active'] : navStyle.collapse
-          }`}
-        >
-          {navItems.map((navItem) => (
-            <li key={navItem.id}>
-              <Link href={navItem.link}>
-                <LinkScroll
-                  activeClass={navStyle['nav--active']}
-                  to={navItem.id}
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                >
-                  {navItem.name}
-                </LinkScroll>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <NavBurger onClick={handleNavCollapsed} />
+        <nav>
+          <ul
+            className={`${navStyle['nav-list']} ${
+              isNavCollapsed ? navStyle['collapse-active'] : navStyle.collapse
+            }`}
+          >
+            {navItems.map((navItem) => (
+              <li key={navItem.id}>
+                <Link href={navItem.link}>
+                  <LinkScroll
+                    activeClass={navStyle['nav--active']}
+                    to={navItem.id}
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    {navItem.name}
+                  </LinkScroll>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
     </Container>
   )
 }

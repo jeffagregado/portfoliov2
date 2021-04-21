@@ -30,19 +30,22 @@ export const Nav = () => {
 
   return (
     <Container id="home">
-      <header className={navStyle.navMain}>
-        <div className={navStyle.logo}>
-          <Link href="/">
-            <a>Logo</a>
-          </Link>
+      <header className={navStyle['nav-header']}>
+        <div>
+          <div className={navStyle['nav-logo']}>
+            <Link href="/">
+              <a>Logo</a>
+            </Link>
+          </div>
+          <NavBurger onClick={handleNavCollapsed} />
         </div>
-        <NavBurger onClick={handleNavCollapsed} />
-        <nav>
-          <ul
-            className={`${navStyle['nav-list']} ${
-              isNavCollapsed ? navStyle['collapse-active'] : navStyle.collapse
-            }`}
-          >
+
+        <nav
+          className={`${navStyle['nav-list']} ${
+            isNavCollapsed ? navStyle['collapse--active'] : navStyle.collapse
+          }`}
+        >
+          <ul>
             {navItems.map((navItem) => (
               <li key={navItem.id}>
                 <Link href={navItem.link}>

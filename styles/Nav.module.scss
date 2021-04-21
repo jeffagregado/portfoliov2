@@ -1,100 +1,102 @@
 @import './Utilities/mixins';
 
-.navMain {
+@import './Utilities/mixins';
+
+.nav-header {
   margin: 1em 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
 
-  @screen lg {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  & > .logo {
-    @include font(2rem, 600);
+  div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  > div > .nav-logo {
+    @include font($fontTitle, 600);
     color: $primary;
-    flex-grow: 5;
   }
 
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+  > .nav-list {
+    max-height: 0;
+    transition: max-height 300ms ease-in-out;
+    /* transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out; */
 
-    li {
-      @include font(1.3rem);
+    > ul {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      margin: 1rem 0;
-      cursor: pointer;
-      transition: 0.5s ease;
-      color: black;
+      align-items: center;
       width: 100%;
 
-      &:hover {
-        color: $primary;
-      }
+      > li {
+        @include font(1.3rem, 500);
+        padding: 1em;
 
-      .nav--active {
-        color: $primary;
-      }
+        > a {
+          cursor: pointer;
+          transition: 300ms ease-in-out;
+          opacity: 0;
+          transition: opacity 100ms ease-in-out;
 
-      &:last-child {
-        box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 1px 0 0 #e6ecf8;
-      }
-    }
-
-    &.collapse {
-      max-height: 0;
-
-      @screen lg {
-        max-height: 280px;
-      }
-    }
-
-    &.collapse-active {
-      max-height: 280px;
-    }
-
-    @screen lg {
-      display: flex;
-      flex-direction: row;
-      flex: 1 1 20%;
-
-      li {
-        flex-grow: 1;
-        &:last-child {
-          box-shadow: none;
+          &:hover {
+            color: $primary;
+          }
         }
       }
     }
+
+    &.collapse--active {
+      max-height: 21vh;
+      transition: max-height 300ms ease-in-out;
+      /* transform: scale(1, 1);
+      transition: transform 300ms ease-in-out; */
+
+      a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 300ms;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+
+    > .nav-list {
+      max-height: 5em;
+      flex-direction: row;
+      /* transform: scale(1, 1); */
+
+      > ul {
+        flex-direction: row;
+      }
+
+      > ul > li > a {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* nav button */
+.nav-toggle {
+  padding: 9px 10px;
+  border: 1px solid transparent;
+
+  .nav-icon {
+    background-color: black;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 5px 0;
   }
 
-  /* nav button */
-  .nav-toggle {
-    padding: 9px 10px;
-    margin: 8px 15px;
-    border: 1px solid transparent;
-
-    .nav-icon {
-      background-color: black;
-      display: block;
-      width: 22px;
-      height: 2px;
-      border-radius: 1px;
-      margin: 5px 0;
-    }
-
-    @screen lg {
-      display: none;
-    }
+  @screen lg {
+    display: none;
   }
 }

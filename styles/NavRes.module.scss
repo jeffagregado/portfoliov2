@@ -1,0 +1,81 @@
+@import './Utilities/mixins';
+
+.nav-header {
+  margin: 1em 0;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  > div > .nav-logo {
+    @include font($fontTitle, 600);
+    color: $primary;
+  }
+
+  > .nav-list {
+    max-height: 0;
+    transition: max-height 300ms ease-in-out;
+    /* transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out; */
+
+    > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      > li {
+        @include font(1.3rem, 500);
+        padding: 1em;
+
+        > a {
+          cursor: pointer;
+          transition: 300ms ease-in-out;
+          opacity: 0;
+          transition: opacity 100ms ease-in-out;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &.collapse--active {
+      max-height: 21vh;
+      transition: max-height 300ms ease-in-out;
+      /* transform: scale(1, 1);
+      transition: transform 300ms ease-in-out; */
+
+      a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 300ms;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+
+    > .nav-list {
+      max-height: 5em;
+      flex-direction: row;
+      /* transform: scale(1, 1); */
+
+      > ul {
+        flex-direction: row;
+      }
+
+      > ul > li > a {
+        opacity: 1;
+      }
+    }
+  }
+}

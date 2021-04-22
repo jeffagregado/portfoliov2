@@ -28,7 +28,7 @@
   }
 
   &.card-works {
-    width: 400px;
+    width: 100%;
     border: 1px solid #e6ecf8;
     overflow: hidden;
 
@@ -50,6 +50,14 @@
         color: $primary;
         margin-bottom: 0.5em;
       }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .card {
+    &.card-works {
+      width: 400px;
     }
   }
 }

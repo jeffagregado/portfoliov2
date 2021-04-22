@@ -14,7 +14,7 @@
     color: $primary;
   }
 
-  > .nav-list {
+  .nav-list {
     max-height: 0;
     transition: max-height 300ms ease-in-out;
     /* transform: scale(1, 0);
@@ -46,7 +46,7 @@
     }
 
     &.collapse--active {
-      max-height: 21vh;
+      max-height: 25vh;
       transition: max-height 300ms ease-in-out;
       /* transform: scale(1, 1);
       transition: transform 300ms ease-in-out; */
@@ -64,7 +64,7 @@
     display: flex;
     justify-content: space-between;
 
-    > .nav-list {
+     .nav-list {
       max-height: 5em;
       flex-direction: row;
       /* transform: scale(1, 1); */

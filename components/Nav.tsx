@@ -4,6 +4,7 @@ import { Link as LinkScroll } from 'react-scroll'
 import navStyle from '../styles/Nav.module.scss'
 import NavBurger from './NavBurger'
 import { useState } from 'react'
+import Button from './Button'
 
 interface navItem {
   id: string

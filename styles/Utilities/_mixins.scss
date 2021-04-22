@@ -22,7 +22,7 @@
 %font-style {
   text-align: center;
   h1 {
-    @include font($fontTitle, 600);
+    @include font(2rem, 600);
     margin-bottom: 1em;
   }
 

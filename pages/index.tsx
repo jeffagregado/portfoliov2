@@ -2,8 +2,44 @@ import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import sectionStyle from '../styles/Section.module.scss'
 import Button from '../components/Button'
+import cardStyle from '../styles/Card.module.scss'
+
+type projectsType = {
+  id: number
+  name: string
+  alt: string
+  desc: string
+  link: string
+  img: string
+}
 
 export default function Home() {
+  const projects: projectsType[] = [
+    {
+      id: 0,
+      name: 'One-page App',
+      alt: 'one-page-app',
+      desc: 'To practice my skills without using bootstrap',
+      link: 'https://one-page-app.netlify.app/',
+      img: '/one-page-app.PNG',
+    },
+    {
+      id: 0,
+      name: 'One-page App',
+      alt: 'one-page-app',
+      desc: 'To practice my skills without using bootstrap',
+      link: 'https://one-page-app.netlify.app/',
+      img: '/one-page-app.PNG',
+    },
+    {
+      id: 0,
+      name: 'One-page App',
+      alt: 'one-page-app',
+      desc: 'To practice my skills without using bootstrap',
+      link: 'https://one-page-app.netlify.app/',
+      img: '/one-page-app.PNG',
+    },
+  ]
   return (
     <>
       <Container className={`${sectionStyle.section} ${sectionStyle.sectHome}`}>
@@ -38,7 +74,7 @@ export default function Home() {
       >
         <Container>
           <div className={`${sectionStyle.skills}`}>
-            <Card>
+            <Card className="card-skills">
               <div>
                 <h1>Techincal Languages</h1>
                 <ul>
@@ -50,7 +86,7 @@ export default function Home() {
                 </ul>
               </div>
             </Card>
-            <Card>
+            <Card className="card-skills">
               <div>
                 <h1>Dev Tools / Frameworks</h1>
                 <ul>
@@ -63,7 +99,7 @@ export default function Home() {
                 </ul>
               </div>
             </Card>
-            <Card>
+            <Card className="card-skills">
               <div>
                 <h1>Design Tools</h1>
                 <ul>
@@ -78,11 +114,29 @@ export default function Home() {
         </Container>
       </section>
 
-      <section>
+      <section
+        id="projects"
+        className={`${sectionStyle.section} ${sectionStyle.sectWorks}`}
+      >
         <Container>
-          <div>
+          <div className={sectionStyle['sectWorks-title']}>
             <h1>My Recent Work</h1>
             <sub>Below are my few projects I've been working recently</sub>
+          </div>
+          <div className={sectionStyle['sectWorks-list']}>
+            {projects.map((project) => (
+              <Card className="card-works">
+                <a key={project.id} href={project.link} target="_blank">
+                  <div className={cardStyle['card-img']}>
+                    <img src={project.img} alt={project.alt} />
+                  </div>
+                  <div className={cardStyle['card-info']}>
+                    <h2>{project.name}</h2>
+                    <p>{project.desc}</p>
+                  </div>
+                </a>
+              </Card>
+            ))}
           </div>
         </Container>
       </section>

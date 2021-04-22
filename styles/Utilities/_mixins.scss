@@ -18,3 +18,15 @@
     font-weight: $weight;
   }
 }
+
+%font-style {
+  text-align: center;
+  h1 {
+    @include font($fontTitle, 600);
+    margin-bottom: 1em;
+  }
+
+  sub {
+    @include font(1.3rem, 200);
+  }
+}

@@ -55,6 +55,7 @@ export const Nav = () => {
                     spy={true}
                     smooth={true}
                     duration={1000}
+                    onClick={handleNavCollapsed}
                   >
                     {navItem.name}
                   </LinkScroll>

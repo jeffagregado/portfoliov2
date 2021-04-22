@@ -3,24 +3,53 @@
 .card {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 2em;
-  border: 1px solid #e6ecf8;
-  background-color: white;
-  line-height: 2em;
   border-radius: 15px;
 
-  div {
-    padding: 1em;
+  &.card-skills {
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    border: 1px solid #e6ecf8;
+    background-color: white;
+    line-height: 2em;
+
+    div {
+      padding: 1em;
+    }
+
+    & > div > h1 {
+      @include font($fontTitle, 500);
+      margin-bottom: 1em;
+    }
+
+    & > div > ul > li {
+      @include font(1.2rem);
+    }
   }
 
-  & > div > h1 {
-    @include font($fontTitle, 500);
-    margin-bottom: 1em;
-  }
+  &.card-works {
+    width: 400px;
+    border: 1px solid #e6ecf8;
+    overflow: hidden;
 
-  & > div > ul > li {
-    @include font(1.2rem);
+    > a > .card-img {
+      width: 100%;
+      height: 200px;
+
+      > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    > a > .card-info {
+      padding: 1em;
+
+      > h2 {
+        @include font($fontSub, 500);
+        color: $primary;
+        margin-bottom: 0.5em;
+      }
+    }
   }
 }

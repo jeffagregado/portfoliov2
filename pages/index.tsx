@@ -60,8 +60,8 @@ export default function Home() {
               I am a career shifter who would like to work in web development. I
               have been studying diligently and created several personal
               projects to improve my skills. One of my goals is to land a
-              fron-end developer jobs or any junior position one day so that I
-              can put my skills to use.
+              front-end developer jobs or any junior position that I can put my
+              skills to use.
             </p>
           </div>
         </Container>

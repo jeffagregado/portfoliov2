@@ -57,12 +57,11 @@ export default function Home() {
           <div>
             <h1>Jeffrey Andrew Agregado</h1>
             <p>
-              Since beginning my journey as a freelance designer nearly 10 years
-              ago, I've done remote work for agencies, consulted for startups,
-              and collaborated with talented people to create digital products
-              for both business and consumer use. I'm quietly confident,
-              naturally curious, and perpetually working on improving my chops
-              one design problem at a time.
+              I am a career shifter who would like to work in web development. I
+              have been studying diligently and created several personal
+              projects to improve my skills. One of my goals is to land a
+              fron-end developer jobs or any junior position one day so that I
+              can put my skills to use.
             </p>
           </div>
         </Container>

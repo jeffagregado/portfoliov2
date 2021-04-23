@@ -19,7 +19,7 @@ export default function Home() {
       id: 0,
       name: 'One-page App',
       alt: 'one-page-app',
-      desc: 'To practice my skills without using bootstrap',
+      desc: 'My project to practice my skills without using bootstrap',
       link: 'https://one-page-app.netlify.app/',
       img: '/one-page-app.PNG',
     },

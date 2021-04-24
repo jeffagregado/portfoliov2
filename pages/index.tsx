@@ -124,8 +124,8 @@ export default function Home() {
           </div>
           <div className={sectionStyle['sectWorks-list']}>
             {projects.map((project) => (
-              <Card className="card-works">
-                <a key={project.id} href={project.link} target="_blank">
+              <Card key={project.id} className="card-works">
+                <a href={project.link} target="_blank">
                   <div className={cardStyle['card-img']}>
                     <img src={project.img} alt={project.alt} />
                   </div>

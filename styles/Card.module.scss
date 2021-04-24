@@ -1,5 +1,3 @@
-@import './Utilities/mixins';
-
 .card {
   display: flex;
   flex-direction: column;
@@ -43,12 +41,12 @@
     }
 
     > a > .card-info {
-      padding: 1em;
+      padding: 0.8em;
+      text-align: center;
 
       > h2 {
-        @include font($fontSub, 500);
+        @include font($fontSub, 600);
         color: $primary;
-        margin-bottom: 0.5em;
       }
     }
   }

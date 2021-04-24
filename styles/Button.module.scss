@@ -1,5 +1,3 @@
-@import './Utilities/mixins';
-
 .btn {
   @include button(50px);
   @include font(1.3rem, 500);

@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin button($radius) {
   border-radius: $radius;
   border: 1px solid $primary;

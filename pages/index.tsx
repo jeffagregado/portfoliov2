@@ -131,7 +131,6 @@ export default function Home() {
                   </div>
                   <div className={cardStyle['card-info']}>
                     <h2>{project.name}</h2>
-                    <p>{project.desc}</p>
                   </div>
                 </a>
               </Card>

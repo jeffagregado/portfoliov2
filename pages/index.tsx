@@ -3,6 +3,13 @@ import { Container } from '../components/Container'
 import sectionStyle from '../styles/Section.module.scss'
 import Button from '../components/Button'
 import cardStyle from '../styles/Card.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+/* import {
+  faTwitterSquare,
+  faLinkedinIn,
+  faGithubSquare,
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons' */
 
 type projectsType = {
   id: number
@@ -42,6 +49,7 @@ export default function Home() {
   ]
   return (
     <>
+      {/* Hero */}
       <Container className={`${sectionStyle.section} ${sectionStyle.sectHome}`}>
         <section className={sectionStyle['sectHome-hero']}>
           <h1>Front-End Web Developer</h1>
@@ -52,6 +60,7 @@ export default function Home() {
         </section>
       </Container>
 
+      {/* Intro */}
       <section className={`${sectionStyle.section} ${sectionStyle.sectIntro}`}>
         <Container className={sectionStyle['sectIntro-intro']}>
           <div>
@@ -67,6 +76,7 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Experience */}
       <section
         id="skills"
         className={`${sectionStyle.section} ${sectionStyle.sectSkills}`}
@@ -113,6 +123,7 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Projects */}
       <section
         id="projects"
         className={`${sectionStyle.section} ${sectionStyle.sectWorks}`}
@@ -138,6 +149,28 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      {/* External */}
+      <footer
+        className={`${sectionStyle.section} ${sectionStyle['section-external']}`}
+      >
+        <Container>
+          <div className={sectionStyle['external-info']}>
+            <h2>Live and learn, enjoy coding.</h2>
+            <div className={sectionStyle['external-lists']}>
+              <a href="" className={sectionStyle['external-icon']}>
+                <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
+              </a>
+              <a href="" className={sectionStyle['external-icon']}>
+                <FontAwesomeIcon icon={['fab', 'github-square']} size="2x" />
+              </a>
+              <a href="" className={sectionStyle['external-icon']}>
+                <FontAwesomeIcon icon={['fas', 'envelope']} size="2x" />
+              </a>
+            </div>
+          </div>
+        </Container>
+      </footer>
     </>
   )
 }

@@ -35,11 +35,11 @@
 
         > a {
           cursor: pointer;
-          transition: 300ms ease-in-out;
           opacity: 0;
           transition: opacity 100ms ease-in-out;
 
           &:hover {
+            transition: 300ms ease-in-out;
             color: $primary;
           }
         }
@@ -65,7 +65,7 @@
     display: flex;
     justify-content: space-between;
 
-     .nav-list {
+    .nav-list {
       max-height: 5em;
       flex-direction: row;
       /* transform: scale(1, 1); */

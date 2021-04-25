@@ -91,7 +91,7 @@ export default function Home() {
               <div>
                 <h1>Dev Tools / Frameworks</h1>
                 <ul>
-                  <li>Github</li>
+                  <li>Git/Github</li>
                   <li>Next.Js</li>
                   <li>Netlify</li>
                   <li>VS Code</li>
@@ -148,7 +148,8 @@ export default function Home() {
       >
         <Container>
           <div className={sectionStyle['external-info']}>
-            <h2>Live and learn, enjoy coding.</h2>
+            <h2>Live to learn, learn to live.</h2>
+            <h2>Enjoy coding!</h2>
             <div className={sectionStyle['external-lists']}>
               <a
                 href="https://www.linkedin.com/in/jeffrey-andrew-agregado-77311760/"

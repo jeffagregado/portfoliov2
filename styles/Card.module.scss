@@ -45,7 +45,7 @@
       text-align: center;
 
       > h2 {
-        @include font($fontSub, 600);
+        @include font($fontSub, 500);
         color: $primary;
       }
     }

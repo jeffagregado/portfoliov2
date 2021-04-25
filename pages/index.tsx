@@ -32,19 +32,11 @@ export default function Home() {
     },
     {
       id: 0,
-      name: 'One-page App',
-      alt: 'one-page-app',
-      desc: 'To practice my skills without using bootstrap',
-      link: 'https://one-page-app.netlify.app/',
-      img: '/one-page-app.PNG',
-    },
-    {
-      id: 0,
-      name: 'One-page App',
-      alt: 'one-page-app',
-      desc: 'To practice my skills without using bootstrap',
-      link: 'https://one-page-app.netlify.app/',
-      img: '/one-page-app.PNG',
+      name: 'Unofficial Hololive Chart/Rank',
+      alt: 'holo-chart',
+      desc: '',
+      link: 'https://hololive-chart.netlify.app/',
+      img: '/holochart.PNG',
     },
   ]
   return (

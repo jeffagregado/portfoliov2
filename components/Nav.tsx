@@ -35,7 +35,7 @@ export const Nav = () => {
         <div>
           <div className={navStyle['nav-logo']}>
             <Link href="/">
-              <a>Logo</a>
+              <a>J.Andrew</a>
             </Link>
           </div>
           <NavBurger onClick={handleNavCollapsed} />

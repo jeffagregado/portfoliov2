@@ -1,4 +1,4 @@
-@import './utilities/index';
+@import './utilities/mixins';
 
 .btn {
   @include button(50px);

@@ -5,7 +5,7 @@ module.exports = (phase, { defaultConfig }) => {
     defaultConfig['sassOptions'] = {
       //includePaths: ['./styles/'],
       includePaths: [path.join(__dirname, 'styles')],
-      prependData: `@use './styles/utilities/_index.scss' as *;`,
+      prependData: `@import './styles/utilities/index';`,
     }
   }
   return defaultConfig

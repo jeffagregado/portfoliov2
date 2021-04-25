@@ -150,13 +150,22 @@ export default function Home() {
           <div className={sectionStyle['external-info']}>
             <h2>Live and learn, enjoy coding.</h2>
             <div className={sectionStyle['external-lists']}>
-              <a href="" className={sectionStyle['external-icon']}>
+              <a
+                href="https://www.linkedin.com/in/jeffrey-andrew-agregado-77311760/"
+                className={sectionStyle['external-icon']}
+              >
                 <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
               </a>
-              <a href="" className={sectionStyle['external-icon']}>
+              <a
+                href="https://github.com/jeffagregado"
+                className={sectionStyle['external-icon']}
+              >
                 <FontAwesomeIcon icon={['fab', 'github-square']} size="2x" />
               </a>
-              <a href="" className={sectionStyle['external-icon']}>
+              <a
+                href="mailto: jeff.agregado@outlook.com"
+                className={sectionStyle['external-icon']}
+              >
                 <FontAwesomeIcon icon={['fas', 'envelope']} size="2x" />
               </a>
             </div>

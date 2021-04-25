@@ -1,4 +1,4 @@
-const path = require('path')
+/* const path = require('path')
 
 module.exports = (phase, { defaultConfig }) => {
   if ('sassOptions' in defaultConfig) {
@@ -9,7 +9,7 @@ module.exports = (phase, { defaultConfig }) => {
     }
   }
   return defaultConfig
-}
+} */
 
 /* module.exports = (phase, { defaultConfig }) => {
     if ('sassOptions' in defaultConfig) {

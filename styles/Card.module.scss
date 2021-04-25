@@ -1,3 +1,5 @@
+@use './utilities' as *;
+
 .card {
   display: flex;
   flex-direction: column;

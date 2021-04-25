@@ -1,3 +1,5 @@
+@use './utilities' as *;
+
 .btn {
   @include button(50px);
   @include font(1.3rem, 500);

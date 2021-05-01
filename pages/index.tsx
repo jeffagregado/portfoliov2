@@ -84,6 +84,7 @@ export default function Home() {
                   <li>Sass</li>
                   <li>Javascript / ES6</li>
                   <li>ReactJs</li>
+                  <li>Typescript</li>
                 </ul>
               </div>
             </Card>

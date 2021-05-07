@@ -31,12 +31,20 @@ export default function Home() {
       img: '/one-page-app.PNG',
     },
     {
-      id: 0,
+      id: 1,
       name: 'Unofficial Hololive Chart/Rank',
       alt: 'holo-chart',
       desc: '',
       link: 'https://hololive-chart.netlify.app/',
       img: '/holochart.PNG',
+    },
+    {
+      id: 2,
+      name: 'Fake Store',
+      alt: 'fakestore',
+      desc: '',
+      link: 'https://fakestore-jeffagregado.vercel.app/',
+      img: '/fakestore.PNG',
     },
   ]
   return (

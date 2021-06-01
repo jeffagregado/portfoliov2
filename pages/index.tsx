@@ -106,6 +106,8 @@ export default function Home() {
                   <li>VS Code</li>
                   <li>Firebase</li>
                   <li>Contentful</li>
+                  <li>Redux / Zustand</li>
+                  <li>React-hook form</li>
                 </ul>
               </div>
             </Card>

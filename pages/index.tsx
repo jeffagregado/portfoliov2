@@ -46,6 +46,14 @@ export default function Home() {
       link: 'https://fakestore-jeffagregado.vercel.app/',
       img: '/fakestore.PNG',
     },
+    {
+      id: 3,
+      name: 'Old Portfolio',
+      alt: 'portfolio',
+      desc: '',
+      link: 'https://jeffagregado-portfolio.netlify.app/',
+      img: '/oldportfolio.JPG',
+    },
   ]
   return (
     <>

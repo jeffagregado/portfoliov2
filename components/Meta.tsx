@@ -26,7 +26,7 @@ const Meta = ({ title, keywords, description }: Props) => {
 // Default Meta
 
 Meta.defaultProps = {
-  title: 'Jeffrey Andrew Agregado Portfolio',
+  title: 'Jeffrey Andrew Agregado - Portfolio',
   keywords: 'portfolio',
   description: 'My Portfolio',
 }

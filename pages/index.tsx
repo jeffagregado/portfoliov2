@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero */}
       <Container className={`${sectionStyle.section} ${sectionStyle.sectHome}`}>
         <section className={sectionStyle['sectHome-hero']}>
-          <h1>Front-End Web Developer</h1>
+          <h1>Welcome to my Portfolio</h1>
           <p>Creating clean and simple website. Coding with passion</p>
           <Button href="https://1drv.ms/b/s!AsjTvQE1H1sciZRqfTWUy5U3JnTsng?e=l3fMNh">
             My Resume
@@ -92,6 +92,7 @@ export default function Home() {
                   <li>Sass</li>
                   <li>Javascript / ES6</li>
                   <li>ReactJs</li>
+                  <li>NodeJs</li>
                   <li>Typescript</li>
                 </ul>
               </div>

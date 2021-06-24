@@ -99,7 +99,7 @@ export default function Home() {
                   <li>CSS</li>
                   <li>Sass</li>
                   <li>Javascript / ES6</li>
-                  <li>ReactJs</li>
+                  <li>ReactJs w/ hooks</li>
                   <li>NodeJs</li>
                   <li>Typescript</li>
                 </ul>

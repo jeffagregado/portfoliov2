@@ -60,7 +60,7 @@ export default function Home() {
       alt: 'simple music player',
       desc: '',
       link: 'https://mysimple-music-player.netlify.app/',
-      img: '/music-player.JPG',
+      img: '/music-player.png',
     },
   ]
   return (

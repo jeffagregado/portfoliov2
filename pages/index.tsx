@@ -54,6 +54,14 @@ export default function Home() {
       link: 'https://jeffagregado-portfolio.netlify.app/',
       img: '/oldportfolio.JPG',
     },
+    {
+      id: 4,
+      name: 'Simple Music Player',
+      alt: 'simple music player',
+      desc: '',
+      link: 'https://mysimple-music-player.netlify.app/',
+      img: '/music-player.JPG',
+    },
   ]
   return (
     <>
